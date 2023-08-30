@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+           array1 = [3, 6, 8, 9, 21, 45]
+           array2 = [28, 96, 63, 1, 25, 36, 14]
+
+           function juntar_arrays(array1, array2)   {
+            novo_array = []
+            k = 0
+
+            for (i = 0; i < array1.length; i++)
+            {
+                novo_array[k] = array1[i]
+                k++
+            }
+
+            for (j = 0; j < array2.length; j++)
+            {
+                novo_array[k] = array2[j]
+                k++
+            }
+
+            return novo_array
+           }
+
+           array3 = juntar_arrays(array1, array2)
+    
+           window.alert(`Novo Array: ${array3}`)
+            
+        </script>
+    </head>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+            let palavra = prompt("Digite uma palavra:")
+            let letra = prompt("Digite uma letra")
+
+            function conta_carac_1(p, l){
+                tam = p.length
+                cont = 0
+                for(i=0; i<tam; i++){
+                    if(p[i] == l)
+                        cont++
+                }
+            }
+
+            conta_carac_2 = (p, l) =>{
+                tam = p.length
+                cont = 0
+                for(i=0; i<tam; i++){
+                    if(p[i] == l)
+                        cont++
+                }
+            }
+
+            conta_carac_2(palavra, letra)
+            window.alert(`A letra ${letra} aparece ${cont} vez(vezes) na palavra ${palavra}`)
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

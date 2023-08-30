@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function area_triangulo_1(){
+                let base = parseFloat(document.getElementById("base").value)
+                let altura = parseFloat(document.getElementById("altura").value)
+
+                let area = (base*altura)/2
+
+                window.alert(`A area do triangulo eh: ${area} cm²`)
+            }
+
+            area_triangulo_2 = () => {
+                let base = parseFloat(document.getElementById("base").value)
+                let altura = parseFloat(document.getElementById("altura").value)
+
+                let area = (base*altura)/2
+
+                window.alert(`A area do triangulo eh: ${area} cm²`)
+            }
+        </script>
+    </head>
+    <body>
+        <label for="base">Base do triangulo</label>
+        <input type="text" id="base" name="base">
+
+        <label for="altura">Altura do triangulo</label>
+        <input type="text" id="altura" name="altura">
+
+        <button onclick="area_triangulo_2()">Clique</button>
+    </body>
+</html>

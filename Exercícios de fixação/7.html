@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script>
+            function conta_vogais_1(){
+                let p = document.getElementById("palavra").value
+                tam =  p.length
+               
+                p = p.toLowerCase()
+               
+                cont = 0
+               
+                for(i = tam-1; i>=0; i--){
+                    if(p[i] == 'a' || p[i] == 'e' || p[i] == 'i' || p[i] == 'o' || p[i] == 'u')
+                        cont++
+                }
+               
+                window.alert(`O numero de vogais eh: ${cont}`)
+            }
+
+            conta_vogais_2 = () => {
+                let p = document.getElementById("palavra").value
+                tam =  p.length
+               
+                p = p.toLowerCase()
+               
+                cont = 0
+               
+                for(i = tam-1; i>=0; i--){
+                    if(p[i] == 'a' || p[i] == 'e' || p[i] == 'i' || p[i] == 'o' || p[i] == 'u')
+                        cont++
+                }
+               
+                window.alert(`O numero de vogais eh: ${cont}`)
+            }
+        </script>
+    </head>
+    <body>
+        <label for="palavra">Digite uma palavra</label>
+        <input type="text" id="palavra" name="palavra">
+
+        <button onclick="conta_vogais_1()">Clique</button>
+    </body>
+</html>

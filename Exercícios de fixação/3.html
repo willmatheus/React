@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function converte_1(){
+                let num = parseFloat(document.getElementById("num").value)
+                celcius = (num - 32) * 0.5556
+                window.alert(`Temperatura em celcius: ${celcius}`)
+            }
+
+            converte_2 = () => {
+                let num = parseFloat(document.getElementById("num").value)
+                celcius = (num - 32) * 0.5556
+                window.alert(`Temperatura em celcius: ${celcius}`)
+            }
+
+        </script>
+    </head>
+    <body>
+        <input type="text" id="num">
+        <button onclick="converte_2()">Clique</button>
+    </body>
+</html>

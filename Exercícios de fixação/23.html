@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+
+            function Endereco_1(rua, numero, bairro, cidade, uf){
+                this.rua = rua
+                this.numero = numero
+                this.bairro = bairro
+                this.cidade = cidade
+                this.uf = uf
+                this.get_endereco = ()=> `O usuario mora em ${cidade}/${uf}, no bairro ${bairro}, na ${rua}, numero ${numero}`
+            }
+
+            var endereco = new Endereco_1("Av do CPA", 1293, "Jardim Cuiaba", "Cuiaba", "MT")
+
+            window.alert(`${endereco.get_endereco()}`)
+        </script>
+    </head>
+</html>

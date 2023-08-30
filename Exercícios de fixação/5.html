@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function area_perimetro_1(){
+                let raio = parseFloat(document.getElementById("raio").value)
+
+                let area = 3.14*(raio*raio)
+                let perimetro = 2*3.14*raio
+
+                window.alert(`A area do circulo eh: ${area}, e o perimetro eh: ${perimetro} cm`)
+            }
+
+            area_perimetro_2 = () => {
+                let raio = parseFloat(document.getElementById("raio").value)
+
+                let area = 3.14*(raio*raio)
+                let perimetro = 2*3.14*raio
+
+                window.alert(`A area do circulo eh: ${area}, e o perimetro eh: ${perimetro} cm`)
+            }
+        </script>
+    </head>
+    <body>
+        <label for="raio">Raio do círculo</label>
+        <input type="text" id="raio" name="raio">
+
+        <button onclick="area_perimetro_2()">Clique</button>
+    </body>
+</html>

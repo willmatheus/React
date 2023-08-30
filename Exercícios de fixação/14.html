@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            array = [1, 2, -3, 4, -5, 6, 7]
+            tam = array.length
+
+            function retorna_positivos_1(a, size){
+                novo = []
+                for(i=0; i<size; i++){
+                    if(a[i] > 0)
+                        novo.push(a[i])
+                }
+
+                return novo
+            }
+
+            retorna_positivos_2 = (a, size) =>{
+                novo = []
+                for(i=0; i<size; i++){
+                    if(a[i] > 0)
+                        novo.push(a[i])
+                }
+
+                return novo
+            }
+
+            positivos = retorna_positivos_2(array, tam)
+
+            window.alert(`Novo array: ${positivos}`)
+        </script>
+    </head>
+</html>

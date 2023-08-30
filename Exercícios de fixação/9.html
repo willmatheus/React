@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            let num = -1
+            num = prompt("Digite um numero inteiro")
+
+            function calc_fat_1(num){
+                if(num < 0) {
+                    return "Numero invalido"
+                }
+                if(num==1 || num==0){
+                    return 1
+                }
+                return num*calc_fat_1(num-1)
+            }
+
+            calc_fat_2 = (num) =>{
+                if(num < 0) {
+                    return "Numero invalido"
+                }
+                if(num==1 || num==0){
+                    return 1
+                }
+                return num*calc_fat_2(num-1)
+            }
+
+            if(num!=-1)
+                window.alert(calc_fat_2(num))
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

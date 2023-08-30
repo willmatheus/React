@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+           texto = prompt("Insira um texto: ")
+           
+           function contar_palavras(texto)  {
+            texto_dividido = texto.split(" ")
+            num_palavras = texto_dividido.length
+
+            return num_palavras
+           }
+
+           numero_palavras = contar_palavras(texto)
+           window.alert(`Numero de Palavras do texto: ${numero_palavras}`)
+            
+        </script>
+    </head>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            function calc_retorno_investimento_1(){
+                let c = parseFloat(document.getElementById("capital").value)
+                let i = parseFloat(document.getElementById("taxa").value)
+                let t = parseFloat(document.getElementById("tempo").value)
+                
+                t = t/100
+
+                let retorno = c*Math.pow((1+i), t)
+
+                window.alert(`O retorno do investimento eh: ${retorno.toFixed(2)} R$`)
+            }
+
+            calc_retorno_investimento_2 = () => {
+                let c = parseFloat(document.getElementById("capital").value)
+                let i = parseFloat(document.getElementById("taxa").value)
+                let t = parseFloat(document.getElementById("tempo").value)
+                
+                t = t/100
+
+                let retorno = c*Math.pow((1+i), t)
+
+                window.alert(`O retorno do investimento eh: ${retorno.toFixed(2)} R$`)
+            }
+        </script>
+    </head>
+    <body>
+        <label for="capital">Valor do Capital inicial:</label>
+        <input type="text" id="capital" name="capital">
+
+        <label for="taxa">Taxa de juros em %:</label>
+        <input type="text" id="taxa" name="taxa">
+
+        <label for="tempo">Tempo do investimento, em meses:</label>
+        <input type="text" id="tempo" name="tempo">
+
+        <button onclick="calc_retorno_investimento_1()">Clique</button>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+           array = [2, 6, 36, 9, 21, 5, 7]
+
+           function inverter_array(array)
+           {
+            array_aux = []
+
+            for (i = 0; i < array.length; i++)
+            {
+                array_aux[i] = array[array.length - 1 - i]
+            }
+
+            for (i = 0; i < array.length; i++)
+            {
+                array[i] = array_aux[i]
+            }
+
+            return array;
+
+           }
+
+           array_invertido = inverter_array(array)
+           window.alert(`Array invertido: ${array_invertido}`)
+            
+        </script>
+    </head>
+</html>

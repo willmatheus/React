@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+           array = ["sapo", "elefante", "edificio", "pneumoultramicroscopicossilicovulcanoconiose", "jardim", "armazem"]
+           tam = array.length
+
+           function retorna_maior_string(array, tam) {
+            maior = 0
+            maior_string = ""
+
+            
+            for (i = 0; i < tam; i++)
+            {
+                if (maior < array[i].length)
+                {
+                    maior = array[i].length
+                    maior_string = array[i]
+                }
+            }
+
+            return maior_string
+           }
+
+           string = retorna_maior_string(array, tam)
+           window.alert(`Maior String: ${string}`)
+            
+        </script>
+    </head>
+</html>
