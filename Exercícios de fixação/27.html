@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+
+    <body>
+        <p id="texto"></p>
+
+        <script>
+            
+            var usuarios = [{
+                nome: "Douglas",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Elton",
+                habilidades: ["PHP", "Ruby on Rails", "Laravel"]
+            }];
+
+            function funcao_1(usuarios){
+                for(objeto of usuarios){
+                    document.getElementById("texto").innerHTML += objeto.nome + " possui as habilidades: " + objeto.habilidades.join(', ') + '<br>'
+                }
+            }
+
+            funcao_2 = (usuarios) =>{
+                for(objeto of usuarios){
+                    document.getElementById("texto").innerHTML += objeto.nome + " possui as habilidades: " + objeto.habilidades.join(', ') + '<br>'
+                }
+            }
+
+            //funcao_1(usuarios)
+            funcao_2(usuarios)
+            
+        </script>
+    </body>
+</html>
