@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            function temHabilidade(skills){
+                tam = skills.length
+                for(i = 0; i<tam; i++){
+                    if(skills[i] == "JavaScript")
+                        return true
+                }
+                return false
+            }
+
+            temHabilidade_2 = (skills) =>{
+                tam = skills.length
+                for(i = 0; i<tam; i++){
+                    if(skills[i] == "JavaScript")
+                        return true
+                }
+                return false
+            }
+
+            var skills = ["JavaScript", "ReactJS", "React Native", "Angular"]
+
+            existe = temHabilidade(skills)
+            
+            if(existe)
+                window.alert("O array possui JavaScript")
+            else
+                window.alert("O array não possui JavaScript")
+        </script>
+    </head>
+
+    <body></body>
+</html>
