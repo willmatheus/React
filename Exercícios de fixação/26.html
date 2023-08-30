@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+            var anosEstudo = parseInt(prompt("Digite o total de anos de estudo:"))
+
+            function experiencia(a){
+                switch(a){
+                    case 0:
+                    case 1:
+                        return "Junior"
+                    case 2:
+                    case 3:
+                        return "Pleno"
+                    case 4:
+                    case 5:
+                    case 6:
+                        return "Senior"
+                    default:
+                        if(a >= 7)
+                            return "Grão Mestre Jedi"
+                }
+            }
+
+            experiencia_2 = (a) =>{
+                switch(a){
+                    case 0:
+                    case 1:
+                        return "Junior"
+                    case 2:
+                    case 3:
+                        return "Pleno"
+                    case 4:
+                    case 5:
+                    case 6:
+                        return "Senior"
+                    default:
+                        if(a >= 7)
+                            return "Grão Mestre Jedi"
+                }
+            }
+
+            window.alert(`${experiencia(anosEstudo)}`)
+
+        </script>
+    </head>
+
+    <body></body>
+</html>
